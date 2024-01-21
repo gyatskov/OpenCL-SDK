@@ -1,3 +1,5 @@
+include("${CMAKE_CURRENT_LIST_DIR}/CPM.cmake")
+
 if(OPENCL_SDK_BUILD_UTILITY_LIBRARIES)
   foreach(DEP IN ITEMS whereami)
     list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/Dependencies/${DEP}")
