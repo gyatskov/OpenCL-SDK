@@ -10,4 +10,11 @@ add_library(whereami STATIC
 target_include_directories(whereami
     PUBLIC "${whereami_SOURCE_DIR}/src"
 )
+install(
+TARGETS
+    whereami
+RUNTIME
+DESTINATION
+    bin
+)
 set_target_properties(whereami PROPERTIES LINKER_LANGUAGE C)
